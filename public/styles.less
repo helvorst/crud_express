@@ -1,0 +1,34 @@
+@main_color: lightgray;
+@border_color: black;
+@radius: 5px;
+@height: 30px;
+.radius {
+    border-radius: @radius !important;
+    border: 1px solid;
+    border-color: @border_color;
+    margin: 5px;
+    padding: 5px;
+  
+}
+.box{
+    .radius;
+ background-color: @main_color !important;
+ padding: 20px;
+ margin: 10px;
+
+}
+input{
+    .radius;
+    height: @height;
+
+
+}
+
+a{
+    cursor: pointer;
+    color: red;
+}
+button {
+    .radius;
+    height: @height;
+}

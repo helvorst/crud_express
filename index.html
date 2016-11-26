@@ -1,0 +1,32 @@
+<h1>quotes</h1>
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="public/styles.css">
+
+    <script src="public/jquery.js"></script>
+    <script src="public/angular.js"></script>
+    <script src="public/app.js"></script>
+</head>
+
+<body ng-app="mya" ng-controller="indexCtr">
+
+    <div class="box">
+        <div ng-repeat=" q in quotes">
+            who
+            <input ng-model="q.who" /> says
+            <input ng-model="q.says" />
+            <a ng-click="edit(q)">edit</a>
+            <a ng-click="remove(q)">remove</a>
+        </div>
+    </div>
+    <div class="box">
+        who:<input name="who" ng-model="who"> says:
+        <input name="says" ng-model="says">
+        <button ng-click="save()">Submit</button>
+    </div>
+</body>
+
+</html>
